@@ -7,6 +7,9 @@ J-Link allow us to supply only with 5V so I design this board to solve that prob
 ## Schematic
 Schematic is very simple but if you need you can find it [here](Docs/Schematic.pdf)
 
+## Gerber Files
+Complite package ready for production you can find [here](https://github.com/L0R3nz/Jlink_Power_Supply/releases/latest)
+
 ## 3D Render
 ![Model 3D](Docs/Model_3D.png)
 
