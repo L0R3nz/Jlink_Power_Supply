@@ -11,6 +11,6 @@ Schematic is very simple but if you need you can find it [here](Docs/Schematic.p
 ![Model 3D](Docs/Model_3D.png)
 
 ## Real photos
-![Photo 1](Docs/Real_photo_1.png)
+![Photo 1](Docs/Real_photo_1.jpg)
 
-![Photo 2](Docs/Real_photo_2.png)
+![Photo 2](Docs/Real_photo_2.jpg)
