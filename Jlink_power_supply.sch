@@ -1,0 +1,378 @@
+EESchema Schematic File Version 4
+LIBS:Jlink_power_supply-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Jlink Power Supply"
+Date "2020-06-20"
+Rev "rev A"
+Comp "Robert Haluczok"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5D73CCF2
+P 6000 4700
+F 0 "#PWR0101" H 6000 4550 50  0001 C CNN
+F 1 "+3.3V" H 6050 4850 50  0000 C CNN
+F 2 "" H 6000 4700 50  0001 C CNN
+F 3 "" H 6000 4700 50  0001 C CNN
+	1    6000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5D73CD4C
+P 3500 3850
+F 0 "#PWR0102" H 3500 3700 50  0001 C CNN
+F 1 "+5V" H 3515 4023 50  0000 C CNN
+F 2 "" H 3500 3850 50  0001 C CNN
+F 3 "" H 3500 3850 50  0001 C CNN
+	1    3500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5D73CD8A
+P 4650 4100
+F 0 "#PWR0103" H 4650 3850 50  0001 C CNN
+F 1 "GND" H 4655 3927 50  0000 C CNN
+F 2 "" H 4650 4100 50  0001 C CNN
+F 3 "" H 4650 4100 50  0001 C CNN
+	1    4650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J1
+U 1 1 5D73CE2A
+P 4350 3550
+F 0 "J1" H 4350 4200 50  0000 C CNN
+F 1 "Jlink input" H 4450 4100 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Horizontal" H 4350 3550 50  0001 C CNN
+F 3 "~" H 4350 3550 50  0001 C CNN
+	1    4350 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 3950 4650 3950
+Wire Wire Line
+	4550 3850 4650 3850
+Wire Wire Line
+	4650 3950 4650 3850
+Wire Wire Line
+	4550 3750 4650 3750
+Wire Wire Line
+	4650 3750 4650 3850
+Connection ~ 4650 3850
+Wire Wire Line
+	4550 3650 4650 3650
+Wire Wire Line
+	4650 3650 4650 3750
+Connection ~ 4650 3750
+Wire Wire Line
+	4550 3550 4650 3550
+Wire Wire Line
+	4650 3550 4650 3650
+Connection ~ 4650 3650
+Wire Wire Line
+	4550 3450 4650 3450
+Wire Wire Line
+	4650 3450 4650 3550
+Connection ~ 4650 3550
+Wire Wire Line
+	4550 3350 4650 3350
+Wire Wire Line
+	4650 3350 4650 3450
+Connection ~ 4650 3450
+Wire Wire Line
+	4550 3250 4650 3250
+Wire Wire Line
+	4650 3250 4650 3350
+Connection ~ 4650 3350
+Wire Wire Line
+	4550 3150 4650 3150
+Wire Wire Line
+	4650 3150 4650 3250
+Connection ~ 4650 3250
+NoConn ~ 4550 3050
+NoConn ~ 4050 3850
+NoConn ~ 4050 3150
+NoConn ~ 4050 3250
+NoConn ~ 4050 3550
+Text GLabel 3950 3050 0    50   Input ~ 0
+Vref
+Text GLabel 3950 3350 0    50   Input ~ 0
+SWDIO
+Text GLabel 3950 3450 0    50   Input ~ 0
+SWCLK
+Text GLabel 3950 3650 0    50   Input ~ 0
+SWO
+Text GLabel 3950 3750 0    50   Input ~ 0
+Reset
+Wire Wire Line
+	4050 3750 3950 3750
+Wire Wire Line
+	3950 3650 4050 3650
+Wire Wire Line
+	3950 3050 4050 3050
+Wire Wire Line
+	3950 3350 4050 3350
+Wire Wire Line
+	3950 3450 4050 3450
+$Comp
+L power:+5V #PWR0104
+U 1 1 5D7407FA
+P 5800 4700
+F 0 "#PWR0104" H 5800 4550 50  0001 C CNN
+F 1 "+5V" H 5750 4850 50  0000 C CNN
+F 2 "" H 5800 4700 50  0001 C CNN
+F 3 "" H 5800 4700 50  0001 C CNN
+	1    5800 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5050 6000 5000
+NoConn ~ 6250 5150
+Wire Wire Line
+	6250 5050 6000 5050
+Wire Wire Line
+	5800 4700 5800 5000
+Wire Wire Line
+	5800 5250 6250 5250
+$Comp
+L power:+5V #PWR0106
+U 1 1 5D7447CE
+P 4400 4750
+F 0 "#PWR0106" H 4400 4600 50  0001 C CNN
+F 1 "+5V" H 4415 4923 50  0000 C CNN
+F 2 "" H 4400 4750 50  0001 C CNN
+F 3 "" H 4400 4750 50  0001 C CNN
+	1    4400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5D7447DF
+P 5200 4750
+F 0 "#PWR0107" H 5200 4600 50  0001 C CNN
+F 1 "+3.3V" H 5215 4923 50  0000 C CNN
+F 2 "" H 5200 4750 50  0001 C CNN
+F 3 "" H 5200 4750 50  0001 C CNN
+	1    5200 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5D7447F0
+P 4800 5250
+F 0 "#PWR0108" H 4800 5000 50  0001 C CNN
+F 1 "GND" H 4805 5077 50  0000 C CNN
+F 2 "" H 4800 5250 50  0001 C CNN
+F 3 "" H 4800 5250 50  0001 C CNN
+	1    4800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-3.3 U1
+U 1 1 5D7448EE
+P 4800 4850
+F 0 "U1" H 4800 5092 50  0000 C CNN
+F 1 "AMS1117-3.3" H 4800 5001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4800 5050 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4900 4600 50  0001 C CNN
+	1    4800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4850 4400 4850
+Wire Wire Line
+	4400 4850 4400 4750
+Wire Wire Line
+	5200 4750 5200 4850
+Wire Wire Line
+	5200 4850 5100 4850
+Wire Wire Line
+	4800 5150 4800 5250
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J3
+U 1 1 5D74867C
+P 7100 3450
+F 0 "J3" H 7050 4100 50  0000 C CNN
+F 1 "Jlink output" H 7200 4000 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Horizontal" H 7100 3450 50  0001 C CNN
+F 3 "~" H 7100 3450 50  0001 C CNN
+	1    7100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0109
+U 1 1 5D7487B4
+P 6850 2950
+F 0 "#PWR0109" H 6850 2800 50  0001 C CNN
+F 1 "VCC" H 6867 3123 50  0000 C CNN
+F 2 "" H 6850 2950 50  0001 C CNN
+F 3 "" H 6850 2950 50  0001 C CNN
+	1    6850 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 6800 3050 0    50   Input ~ 0
+Vref
+Wire Wire Line
+	6900 3050 6850 3050
+Connection ~ 6850 3050
+Wire Wire Line
+	6850 3050 6800 3050
+NoConn ~ 6900 3150
+NoConn ~ 6900 3250
+NoConn ~ 7400 3050
+NoConn ~ 6900 3850
+NoConn ~ 6900 3550
+Text GLabel 6800 3350 0    50   Input ~ 0
+SWDIO
+Text GLabel 6800 3450 0    50   Input ~ 0
+SWCLK
+Text GLabel 6800 3650 0    50   Input ~ 0
+SWO
+Text GLabel 6800 3750 0    50   Input ~ 0
+Reset
+Wire Wire Line
+	6900 3750 6800 3750
+Wire Wire Line
+	6800 3650 6900 3650
+Wire Wire Line
+	6800 3450 6900 3450
+Wire Wire Line
+	6800 3350 6900 3350
+NoConn ~ 6900 3950
+Wire Wire Line
+	3500 3950 3500 3850
+Wire Wire Line
+	4650 4100 4650 3950
+Connection ~ 4650 3950
+$Comp
+L power:GND #PWR0110
+U 1 1 5D750B16
+P 7500 4050
+F 0 "#PWR0110" H 7500 3800 50  0001 C CNN
+F 1 "GND" H 7505 3877 50  0000 C CNN
+F 2 "" H 7500 4050 50  0001 C CNN
+F 3 "" H 7500 4050 50  0001 C CNN
+	1    7500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3950 7500 3950
+Wire Wire Line
+	7500 3950 7500 4050
+Wire Wire Line
+	7400 3150 7500 3150
+Connection ~ 7500 3950
+Wire Wire Line
+	7400 3850 7500 3850
+Wire Wire Line
+	7500 3150 7500 3250
+Connection ~ 7500 3850
+Wire Wire Line
+	7500 3850 7500 3950
+Wire Wire Line
+	7400 3750 7500 3750
+Connection ~ 7500 3750
+Wire Wire Line
+	7500 3750 7500 3850
+Wire Wire Line
+	7400 3650 7500 3650
+Connection ~ 7500 3650
+Wire Wire Line
+	7500 3650 7500 3750
+Wire Wire Line
+	7400 3550 7500 3550
+Connection ~ 7500 3550
+Wire Wire Line
+	7500 3550 7500 3650
+Wire Wire Line
+	7400 3450 7500 3450
+Connection ~ 7500 3450
+Wire Wire Line
+	7500 3450 7500 3550
+Wire Wire Line
+	7400 3350 7500 3350
+Connection ~ 7500 3350
+Wire Wire Line
+	7500 3350 7500 3450
+Wire Wire Line
+	7400 3250 7500 3250
+Connection ~ 7500 3250
+Wire Wire Line
+	7500 3250 7500 3350
+Wire Wire Line
+	6850 2950 6850 3050
+Wire Wire Line
+	6900 5250 6750 5250
+Wire Wire Line
+	6900 5150 6900 5250
+Wire Wire Line
+	6900 5150 6750 5150
+Connection ~ 6900 5150
+Wire Wire Line
+	6900 5050 6900 5150
+Wire Wire Line
+	6900 5050 6750 5050
+Connection ~ 6900 5050
+Wire Wire Line
+	6900 4700 6900 5050
+$Comp
+L power:VCC #PWR0105
+U 1 1 5D741D38
+P 6900 4700
+F 0 "#PWR0105" H 6900 4550 50  0001 C CNN
+F 1 "VCC" H 6917 4873 50  0000 C CNN
+F 2 "" H 6900 4700 50  0001 C CNN
+F 3 "" H 6900 4700 50  0001 C CNN
+	1    6900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J2
+U 1 1 5D782B7F
+P 6450 5150
+F 0 "J2" H 6500 5467 50  0000 C CNN
+F 1 "Supply select" H 6500 5376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6450 5150 50  0001 C CNN
+F 3 "~" H 6450 5150 50  0001 C CNN
+	1    6450 5150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3500 3950 4050 3950
+$Comp
+L Device:R_Small R?
+U 1 1 5D79E155
+P 6000 4900
+F 0 "R?" H 6059 4946 50  0000 L CNN
+F 1 "4k7" H 6059 4855 50  0000 L CNN
+F 2 "" H 6000 4900 50  0001 C CNN
+F 3 "~" H 6000 4900 50  0001 C CNN
+	1    6000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4800 6000 4700
+$Comp
+L Device:R_Small R?
+U 1 1 5D79E25B
+P 5800 5100
+F 0 "R?" H 5741 5054 50  0000 R CNN
+F 1 "4k7" H 5741 5145 50  0000 R CNN
+F 2 "" H 5800 5100 50  0001 C CNN
+F 3 "~" H 5800 5100 50  0001 C CNN
+	1    5800 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 5200 5800 5250
+$EndSCHEMATC
